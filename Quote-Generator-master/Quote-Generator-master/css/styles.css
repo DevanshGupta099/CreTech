@@ -1,0 +1,236 @@
+html {
+    box-sizing: border-box;
+    font-family: "Mina", sans-serif, arial;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+  
+.quote-generator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background: linear-gradient(160deg, #ced4da 0%, #343a40 100%);
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  border-radius: 10px;
+}
+  
+header {
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+  
+.quotes {
+  padding: 20px 50px;
+  min-height: 200px;
+}
+  
+.quote-text {
+  padding: 30px 0;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  font-style: oblique;
+}
+  
+.buttons {
+  width: 100%;
+  padding: 20px 50px;
+}
+  
+.button {
+  display: block;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: default;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Mina", sans-serif, arial;
+}
+  
+.twitter {
+  background: linear-gradient(160deg, #1DA1F2 0%, #3B5990 30%);
+  text-decoration: none;
+}
+  
+.new-quote {
+  background: linear-gradient(160deg, #f8f9fa 0%, #343a40 30%);
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+    
+@media screen and (max-width: 600px) {
+  .quote-generator {
+    width: 100%;
+  }
+  header {
+    font-size: 19px;
+  }
+  .quote-text {
+    font-size: 18px;
+  }
+}
+/* css to reset all the designs */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* css to reset all the designs */
+
+/* add styles on elements */
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* background-color: #101010; */
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    /* font-size: 1.6rem; */
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: #475569; */
+    color: #fff;
+    /* change */
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-logo {
+    /* font-size: 2.1rem; */
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: #482ff7; */
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        background-color: #222;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/* add styles on elements */
